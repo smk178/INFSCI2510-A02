@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarthak Killedar</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+<body class="container">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../pages/course.html">Course Selection</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Course Selection</li>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Student Course Selection</h4>
+                        <h6 class="card-subtitle text-muted">Configuration</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="txtName">Name</label>
+                            <input type="email" class="form-control" name="name" id="txtName"
+                                   placeholder="Enter Student Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail">Email</label>
+                            <input type="email" class="form-control" name="email" id="txtEmail"
+                                   aria-describedby="emailHelpId"
+                                   placeholder="Enter Pitt Email">
+                            <small id="emailHelpId" class="form-text text-muted">University of Pittsburgh Email
+                                Address
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="ddlAdviser">Adviser</label>
+                            <select class="form-control" name="adviser" id="ddlAdviser">
+                                <option value="">Please Select Advisor</option>
+                                <option value="Prof. Daqing He">Prof. Daqing He</option>
+                                <option value="Prof. Peter Brusilovsky">Prof. Peter Brusilovsky</option>
+                                <option value="Prof. Prashant Krishnamurthy">Prof. Prashant Krishnamurthy</option>
+                                <option value="Prof. Vladimir Zadorozhny">Prof. Vladimir Zadorozhny</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btnSelectCourses"> Select Courses
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="dCourses" class="col-md-5 d-none">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Select Student Courses</h4>
+                        <h6 class="card-subtitle text-muted">Available Courses</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h4 class="text-warning">Click on Course Name to Select</h4>
+                        </div>
+                        <div class="group">
+                            <h5 class="text-danger">Foundations</h5>
+                            <ul>
+                                <li class="course" data-group="Foundations"><strong class="courseId">INFSCI
+                                    2000</strong> INTRODUCTION TO
+                                    INFORMATION SCIENCE
+                                </li>
+                                <li class="course" data-group="Foundations"><strong class="courseId">INFSCI
+                                    2020</strong> MATHEMATICAL
+                                    FOUNDATIONS FOR INFORMATION SCIENCE
+                                </li>
+                                <li class="course" data-group="Foundations"><strong class="courseId">INFSCI
+                                    2040</strong> (2100) RESEARCH
+                                    DESIGN
+                                </li>
+                                <li class="course" data-group="Foundations"><strong class="courseId">INFSCI
+                                    2060</strong> STATISTICS IN
+                                    INFORMATION SCIENCE
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h5 class="text-danger">Applied</h5>
+                            <ul>
+                                <li class="course" data-group="Applied"><strong class="courseId">INFSCI 2120</strong>
+                                    INFORMATION AND CODING THEORY
+                                </li>
+                                <li class="course" data-group="Applied"><strong class="courseId">INFSCI 2130</strong>
+                                    DECISION ANALYSIS AND DECISION SUPPORT SYSTEMS
+                                </li>
+                                <li class="course" data-group="Applied"><strong class="courseId">INFSCI 2140</strong>
+                                    INFORMATION STORAGE AND RETRIEVAL
+                                </li>
+                                <li class="course" data-group="Applied"><strong class="courseId">INFSCI 2150</strong>
+                                    INTRODUCTION TO SECURITY
+                                </li>
+                                <li class="course" data-group="Applied"><strong class="courseId">INFSCI 2160</strong>
+                                    DATA
+                                    MINING
+                                </li>
+                                <li class="course" data-group="Applied"><strong class="courseId">TELCOM 2130</strong>
+                                    QUEUING
+                                    THEORY
+                                </li>
+                                <li class="course" data-group="Applied"><strong class="courseId">INFSCI 2170</strong>
+                                    CRYPTOGRAPHY
+                                </li>
+                                <li class="course" data-group="Applied"><strong class="courseId">INFSCI 2180</strong>
+                                    (2906)
+                                    KNOWLEDGE REPRESENTATION AND THE SEMANTIC WEB
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h5 class="text-danger">Professional</h5>
+                            <ul>
+                                <li class="course" data-group="Professional"><strong class="courseId">INFSCI
+                                    2210</strong> INFORMATION
+                                    ETHICS
+                                </li>
+                                <li class="course" data-group="Professional"><strong class="courseId">INFSCI
+                                    2220</strong> INFORMATION
+                                    POLICY
+                                </li>
+                                <li class="course" data-group="Professional"><strong class="courseId">TELCOM
+                                    2420</strong> PROJECT
+                                    MANAGEMENT
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h5 class="text-danger">Cognitive</h5>
+                            <ul>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2300</strong>
+                                    HUMAN INFORMATION
+                                    PROCESSING
+                                </li>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2350</strong>
+                                    HUMAN FACTORS IN
+                                    SYSTEMS
+                                </li>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2410</strong>
+                                    INTRODUCTION TO
+                                    NEURAL NETWORKS
+                                </li>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2420</strong>
+                                    NATURAL LANGUAGE
+                                    PROCESSING
+                                </li>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2440</strong>
+                                    ARTIFICIAL
+                                    INTELLIGENCE
+                                </li>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2450</strong>
+                                    ARTIFICIAL
+                                    INTELLIGENCE PROGRAMMING TOOLS
+                                </li>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2460</strong>
+                                    SPATIAL REASONING
+                                    FOR GIS
+                                </li>
+                                <li class="course" data-group="Cognitive"><strong class="courseId">INFSCI 2470</strong>
+                                    INTERACTIVE
+                                    SYSTEM DESIGN
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h5 class="text-danger">Systems</h5>
+                            <ul>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2500</strong>
+                                    DATA STRUCTURES
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2510</strong>
+                                    INFORMATION SYSTEMS
+                                    ANALYSIS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2511</strong>
+                                    INFORMATION SYSTEMS
+                                    DESIGN
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2540</strong>
+                                    SOFTWARE
+                                    ENGINEERING
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2550</strong>
+                                    CLIENT-SERVER
+                                    SYSTEMS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2560</strong>
+                                    WEB TECHNOLOGIES
+                                    AND STANDARDS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2570</strong>
+                                    MANAGEMENT
+                                    INFORMATION SYSTEMS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2591</strong>
+                                    ALGORITHM DESIGN
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2592</strong>
+                                    ARCHITECTURES AND
+                                    ASSEMBLER LANGUAGE
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2593</strong>
+                                    OPERATING SYSTEMS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">TELCOM 2000</strong>
+                                    INTRODUCTION TO
+                                    TELECOMMUNICATIONS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">TELCOM 2110</strong>
+                                    NETWORK DESIGN
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">TELCOM 2300</strong>
+                                    SOFTWARE TOOLS AND
+                                    TECHNIQUES
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2620</strong>
+                                    DEVELOPING SECURE
+                                    SYSTEMS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2621</strong>
+                                    SECURITY MANAGEMENT
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2629</strong>
+                                    CAPSTONE IN
+                                    SECURITY
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2640</strong>
+                                    PROGRAMMING
+                                    LANGUAGES AND ENVIRONMENTS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2710</strong>
+                                    DATABASE MANAGEMENT
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2711</strong>
+                                    ADVANCED TOPIC IN
+                                    DATABASE MANAGEMENT
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2730</strong>
+                                    E-BUSINESS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2731</strong>
+                                    SECURITY IN
+                                    E-COMMERCE
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2739</strong>
+                                    WEB SERVICES AND
+                                    DISTRIBUTED COMPUTING
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2780</strong>
+                                    INTERACTIVE
+                                    GRAPHICS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2801</strong>
+                                    GEOSPATIAL
+                                    INFORMATION SYSTEMS (GIS)
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2802</strong>
+                                    INTERNET-BASED
+                                    INTEROPERABLE GIS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2809</strong>
+                                    SPATIAL MODELING
+                                    AND ANALYSIS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2821</strong>
+                                    INTRODUCTION TO
+                                    BIOMEDICAL INFORMATICS
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">INFSCI 2825</strong>
+                                    PROBABILISTIC
+                                    METHODS FOR COMPUTER-BASED DECISION SUPPORT
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">TELCOM 2420</strong>
+                                    PROJECT MANAGEMENT
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">LIS 2184</strong> LEGAL
+                                    ISSUES IN
+                                    INFORMATION HANDLING
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">TELCOM 2200</strong>
+                                    PHYSICAL LAYER OF
+                                    COMMUNICATIONS 1
+                                </li>
+                                <li class="course" data-group="Systems"><strong class="courseId">TELCOM 2510</strong>
+                                    U.S.
+                                    TELECOMMUNICATIONS POLICY
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-none" id="courseDetails">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+
+                                <h4 class="card-title">Student Course Selection</h4>
+                                <h6 class="card-subtitle text-muted">Course Selection Table</h6>
+                            </div>
+                            <div class="card-body">
+                                <table id="courseSelection" class="table table-bordered">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Stream</th>
+                                        <th>Maximum</th>
+                                        <th>Selected</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="courseSelectionTable">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+
+                                <h4 class="card-title">Student Course Selection</h4>
+                                <h6 class="card-subtitle text-muted">Course Selected</h6>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    The courses are selected for <strong><label class="text-danger"
+                                                                                id="lblName"></label></strong>
+                                    (<strong><label class="text-lowercase text-success" id="lblEmail"></label></strong>)
+                                    under the advisory of
+                                    <strong><label class="text-danger" id="lblAdviser"></label></strong>.</p>
+                                <div id="selectedCourseName">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <hr/>
+            </div>
+            <!-- /container -->
+        </div>
+    </div>
+</main>
+
+<footer class="container">
+    <div class="row">
+        <div class="col-md-8"><p>&copy; Sarthak Killedar, <span id="copyright_year"></span></p>
+        </div>
+        <div class="col-md-4">
+            <p class="mr-auto">
+
+            </p>
+        </div>
+    </div>
+
+</footer>
+<script src="../js/courseSelection.js"></script>
+<script>
+    courseSelection.init();
+    const copyrightYear = document.getElementById("copyright_year");
+    copyrightYear.innerHTML = new Date().getFullYear().toString();
+</script>
+</body>
+
+</html>

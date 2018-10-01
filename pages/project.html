@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarthak Killedar</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+<body class="container">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/experience.html">Experience</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../pages/project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/course.html">Course Selection</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Project</li>
+            </ol>
+        </nav>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Open Source Projects</h1>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">National Stock Exchange Data Collector, <span class="text-danger">Jul 2018</span>
+                        </h5>
+                        <p class="card-text">National Stock Exchange Data Collector for .NET Applications. This library
+                            parses the data using network communication and HTML parsing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">RazorPay IFSC API for .NET <span class="text-danger">Feb 2018</span></h5>
+                        <p class="card-text">Implementation of RazorPay IFSC https://github.com/razorpay/ifsc for .NET</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Open Onvif <span class="text-danger">Jul 2016</span></h5>
+                        <p class="card-text">Designed and Implemented Onvif Protocol support for .NET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+
+    </div>
+</main>
+<hr/>
+<footer class="container">
+    <div class="row">
+        <div class="col-md-8"><p>&copy; Sarthak Killedar, <span id="copyright_year"></span></p>
+        </div>
+        <div class="col-md-4">
+            <p class="mr-auto">
+
+            </p>
+        </div>
+    </div>
+
+</footer>
+<script>
+    const copyrightYear = document.getElementById("copyright_year");
+    copyrightYear.innerHTML = new Date().getFullYear().toString();
+</script>
+</body>
+
+</html>

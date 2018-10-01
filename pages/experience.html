@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarthak Killedar</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+<body class="container">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../pages/experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/course.html">Course Selection</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Experience</li>
+            </ol>
+        </nav>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Experience</h1>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Developer, <span class="text-danger">PixoPal</span></h5>
+                        <h6>July '17 - July '18</h6>
+                        <p class="card-text">Designed and developed end-to-end event driven and highly extensible
+                            micro-services to minimize the turn around time for photo retouching utilizing Azure Event
+                            Bus, Azure SQL and Azure Web App for creating unique customer experience with the complete
+                            process automation. Improved efficiency and productivity by automating internal operation
+                            team processes using number of micro-services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Developer <span class="text-danger">Kshem Software</span></h5>
+                        <h6>June '14 -
+                            <June></June>
+                            '17
+                        </h6>
+                        <p class="card-text">Designed and developed Institute Inspection Management System for Council
+                            of Architecture, Government of India which improved efficiency and help detecting fraudulent
+                            behavior within given institute. Concurrently, developed and maintained various modules of
+                            National Aptitude Test in Architecture (NATA) which includes Question Bank, Online Paper
+                            Scanning, Evaluation and Adaptive Test System and developed internal bot using Microsoft
+                            Cognitive Services for answering queries based on support queries requested by students for
+                            improving response time and remove human dependency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+
+    </div>
+</main>
+<hr/>
+<footer class="container">
+    <div class="row">
+        <div class="col-md-8"><p>&copy; Sarthak Killedar, <span id="copyright_year"></span></p>
+        </div>
+        <div class="col-md-4">
+            <p class="mr-auto">
+
+            </p>
+        </div>
+    </div>
+
+</footer>
+<script>
+    const copyrightYear = document.getElementById("copyright_year");
+    copyrightYear.innerHTML = new Date().getFullYear().toString();
+</script>
+</body>
+
+</html>

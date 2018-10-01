@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarthak Killedar</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+<body class="container">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/project.html">Projects</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../pages/about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/course.html">Course Selection</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Me</li>
+            </ol>
+        </nav>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>About Me</h1>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <img src="../img/profile_photo.JPG" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>I am currently a graduate student at the University of Pittsburgh, I am doing my Master of
+                            Science in
+                            Information Science. I have done my undergraduate in Information Technology from Maharashtra
+                            Insitute of Technology, University of Pune, India. My research interests are in Algorithm
+                            Design
+                            and
+                            Analysis and Web Tehnologies. I like solving algorithmic problems (competitive programming)
+                            online
+                            on Hacker Rank. I'm a follower of Jainism. I watch and analyze cricket matches and love to
+                            play
+                            Badminton. </p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="picture"
+                                     src="../img/linkedin.png"
+                                     alt="">
+                                <img class="picture" src="../img/facebook.svg" alt="">
+                                <img class="picture" src="../img/twitter.svg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /container -->
+
+    </div>
+</main>
+<hr/>
+<footer class="container">
+    <div class="row">
+        <div class="col-md-8"><p>&copy; Sarthak Killedar, <span id="copyright_year"></span></p>
+        </div>
+        <div class="col-md-4">
+            <p class="mr-auto">
+
+            </p>
+        </div>
+    </div>
+
+</footer>
+<script>
+    const copyrightYear = document.getElementById("copyright_year");
+    copyrightYear.innerHTML = new Date().getFullYear().toString();
+</script>
+</body>
+
+</html>
